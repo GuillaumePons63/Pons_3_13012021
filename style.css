@@ -1,3 +1,30 @@
-
+@font-face {
+  font-family: "robotobold";
+  src: url("./font/robotobold/Roboto-Bold-webfont.eot");
+  src: url("./font/robotobold/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("./font/robotobold/Roboto-Bold-webfont.woff2") format("woff2"), url("./font/robotobold/Roboto-Bold-webfont.woff") format("woff"), url("./font/robotobold/Roboto-Bold-webfont.ttf") format("truetype"), url("./font/robotobold/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoregular";
+  src: url("./font/roboto/Roboto-Regular-webfont.eot");
+  src: url("./font/roboto/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("./font/roboto/Roboto-Regular-webfont.woff2") format("woff2"), url("./font/roboto/Roboto-Regular-webfont.woff") format("woff"), url("./font/roboto/Roboto-Regular-webfont.ttf") format("truetype"), url("./font/roboto/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("./font/shrikhand/shrikhand-regular-webfont.eot");
+  src: url("./font/shrikhand/shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./font/shrikhand/shrikhand-regular-webfont.woff2") format("woff2"), url("./font/shrikhand/shrikhand-regular-webfont.woff") format("woff"), url("./font/shrikhand/shrikhand-regular-webfont.ttf") format("truetype"), url("./font/shrikhand/shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  src: url("font/fontawesome/fa-solid-900.eot");
+  src: url("font/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("font/fontawesome/fa-solid-900.woff2") format("woff2"), url("font/fontawesome/fa-solid-900.woff") format("woff"), url("font/fontawesome/fa-solid-900.ttf") format("truetype"), url("font/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
+}
 
 /*# sourceMappingURL=style.css.map */
