@@ -1,0 +1,19 @@
+{
+  "name": "pons_3_13012021",
+  "version": "1.0.0",
+  "description": "Site pour Formaiton Open Class Rooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:style.css"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "Guillaume Pons",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
