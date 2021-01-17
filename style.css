@@ -2,14 +2,14 @@
 @font-face {
   font-family: "robotobold";
   src: url("./font/robotobold/Roboto-Bold-webfont.eot");
-  src: url("./font/robotobold/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("./font/robotobold/Roboto-Bold-webfont.woff2") format("woff2"), url("./font/robotobold/Roboto-Bold-webfont.woff") format("woff"), url("./font/robotobold/Roboto-Bold-webfont.ttf") format("truetype"), url("./font/robotobold/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  src: url("./font/robotobold/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("./font/robotobold/Roboto-Bold-webfont.woff") format("woff"), url("./font/robotobold/Roboto-Bold-webfont.ttf") format("truetype"), url("./font/robotobold/Roboto-Bold-webfont.svg#robotobold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotoregular";
   src: url("./font/roboto/Roboto-Regular-webfont.eot");
-  src: url("./font/roboto/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("./font/roboto/Roboto-Regular-webfont.woff2") format("woff2"), url("./font/roboto/Roboto-Regular-webfont.woff") format("woff"), url("./font/roboto/Roboto-Regular-webfont.ttf") format("truetype"), url("./font/roboto/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  src: url("./font/roboto/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("./font/roboto/Roboto-Regular-webfont.woff") format("woff"), url("./font/roboto/Roboto-Regular-webfont.ttf") format("truetype"), url("./font/roboto/Roboto-Regular-webfont.svg#robotoregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -53,9 +53,10 @@ header .heading {
   background: url(./images/logo/ohmyfood.svg) center no-repeat;
   background-size: contain;
   width: 50%;
-  Margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   height: 31px;
-  padding-top: 20px;
+  margin-top: 30px;
 }
 header a::before {
   font-family: "Font Awesome 5 Free";
@@ -90,9 +91,10 @@ header a::before {
   padding: 20px;
 }
 .main__bouton {
+  font-family: robotobold;
   background: linear-gradient(170deg, #f075da, #a15bdc);
   text-align: center;
-  padding: 7px;
+  padding: 15px;
   color: white;
   border-radius: 25px;
   width: 50%;

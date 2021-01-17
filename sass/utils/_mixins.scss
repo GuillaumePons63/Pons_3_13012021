@@ -14,9 +14,10 @@
 } 
 
 @mixin bouton {
+    font-family:$font-bold;
     background : linear-gradient(170deg, #f075da,#a15bdc);
     text-align:center;
-    padding:7px;
+    padding:15px;
     color:white;
     border-radius:25px;
     width:50%;
