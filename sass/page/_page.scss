@@ -1,0 +1,21 @@
+.main {
+    @include background-grey;
+    &__localize {
+        font-family: $font-primary;
+        color: #4b4b4b;
+        background-color: #eaeaea;
+        padding:7px;
+        &::before {
+            @include font-icone-before ('\f3c5',20px) ;
+
+        }
+    }
+    &__title {
+        text-align:center;
+        padding : 20px;
+    }
+    &__bouton {
+        @include bouton;
+    }
+}
+

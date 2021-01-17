@@ -5,18 +5,13 @@ header {
         background: url(./images/logo/ohmyfood.svg) center no-repeat;
         background-size: contain;
         width:50%;
+        Margin:auto;
         height:31px;
-        margin:auto;
         padding-top:20px;        
     }
 
     a::before {
-        font-family: $font-icone;
-        font-size:1 em;
-        content: '\f060';
-        position : relative;
-        color:black;
-        right:40px;
+        @include font-icone-before ('\f060',40px);
         top:-2px;
     }
    

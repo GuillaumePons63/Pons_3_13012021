@@ -48,9 +48,23 @@
          url('./font/fontawesome/fa-solid-900.ttf') format("truetype"), 
          url('./font/fontawesome/fa-solid-900.svg#fontawesome') format("svg"); 
   
-  }
+}
+
+  body {
+    margin:0;
+}
+
+    p {
+    margin:0;
+}
 
   a {
     text-decoration:none;
-  }
+}
+
+  h1 {
+    font-family: $font-primary;
+    margin:0;
+    padding:20px;
+}
 
