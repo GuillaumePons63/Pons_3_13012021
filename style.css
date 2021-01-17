@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "robotobold";
   src: url("./font/robotobold/Roboto-Bold-webfont.eot");
@@ -23,8 +24,80 @@
   font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 900;
-  src: url("font/fontawesome/fa-solid-900.eot");
-  src: url("font/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("font/fontawesome/fa-solid-900.woff2") format("woff2"), url("font/fontawesome/fa-solid-900.woff") format("woff"), url("font/fontawesome/fa-solid-900.ttf") format("truetype"), url("font/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("./font/fontawesome/fa-solid-900.eot");
+  src: url("./font/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("./font/fontawesome/fa-solid-900.woff2") format("woff2"), url("./font/fontawesome/fa-solid-900.woff") format("woff"), url("./font/fontawesome/fa-solid-900.ttf") format("truetype"), url("./font/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
+}
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: robotoregular;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  height: 62px;
+  width: 100%;
+}
+header .heading {
+  background: url(./images/logo/ohmyfood.svg) center no-repeat;
+  background-size: contain;
+  width: 50%;
+  Margin: auto;
+  height: 31px;
+  padding-top: 20px;
+}
+header a::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1 em;
+  content: "";
+  position: relative;
+  color: black;
+  right: 40px;
+  top: -2px;
+}
+
+.main {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.main__localize {
+  font-family: robotoregular;
+  color: #4b4b4b;
+  background-color: #eaeaea;
+  padding: 7px;
+}
+.main__localize::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1 em;
+  content: "";
+  position: relative;
+  color: black;
+  right: 20px;
+}
+.main__title {
+  text-align: center;
+  padding: 20px;
+}
+.main__bouton {
+  background: linear-gradient(170deg, #f075da, #a15bdc);
+  text-align: center;
+  padding: 7px;
+  color: white;
+  border-radius: 25px;
+  width: 50%;
+  margin: 20px auto 20px auto;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

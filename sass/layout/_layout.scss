@@ -1,0 +1,19 @@
+header {
+    height:62px;
+    width:100%;
+    .heading {
+        background: url(./images/logo/ohmyfood.svg) center no-repeat;
+        background-size: contain;
+        width:50%;
+        Margin:auto;
+        height:31px;
+        padding-top:20px;        
+    }
+
+    a::before {
+        @include font-icone-before ('\f060',40px);
+        top:-2px;
+    }
+   
+}
+
