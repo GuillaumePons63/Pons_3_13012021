@@ -1,10 +1,10 @@
-@mixin font-icone-before ($content,$right) {
+@mixin font-icone-before ($content,$left,$color,$position) {
     font-family: $font-icone;
     font-size:1 em;
     content: ($content);
-    position : relative;
-    color:black;
-    right:($right);
+    position : ($position);
+    color:($color);
+    left:($left);
 }
 
 
@@ -15,7 +15,7 @@
 
 @mixin bouton {
     font-family:$font-bold;
-    background : linear-gradient(170deg, #f075da,#a15bdc);
+    background : linear-gradient(170deg, $color-secondary,$color-primary);
     text-align:center;
     padding:15px;
     color:white;
@@ -29,3 +29,4 @@
     margin:auto;
     width:50%;
 }
+

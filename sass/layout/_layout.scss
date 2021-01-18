@@ -12,8 +12,8 @@ header {
     }
 
     a::before {
-        @include font-icone-before ('\f060',40px);
-        top:-2px;
+        @include font-icone-before ('\f060',-30px,black,relative);
+        top:8px;
     }
 }
 
