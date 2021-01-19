@@ -35,3 +35,11 @@
     background-position: ($position);
     background-size: ($width) ($height);
 }
+
+@mixin padding-block {
+    padding : 40px 0 60px 0;
+}
+
+@mixin shadow ($color) {
+    box-shadow: 0 5px 5px ($color);
+}

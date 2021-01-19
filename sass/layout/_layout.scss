@@ -1,5 +1,8 @@
 header {
     width:100%;
+    @include shadow (black);
+    padding-top:30px;
+    padding-bottom: 20px; 
     .heading {
         background: url(./images/logo/ohmyfood.svg) center no-repeat;
         background-size: contain;
@@ -7,10 +10,7 @@ header {
         margin-left:auto;
         margin-right:auto;
         height:31px;
-        margin-top:30px;
-        margin-bottom: 20px;        
     }
-
     a::before {
         @include font-icone-before ('\f060',-30px,black,relative);
         top:8px;
