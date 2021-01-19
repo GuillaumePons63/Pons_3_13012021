@@ -9,7 +9,7 @@
 
 
 @mixin background-grey {
-    background-color : #f6f6f6;
+    background-color : $color-background;
     text-align : center;
 } 
 
@@ -30,3 +30,8 @@
     width:50%;
 }
 
+@mixin background-image ($image,$position,$width,$height) {
+    background: url($image) no-repeat ;
+    background-position: ($position);
+    background-size: ($width) ($height);
+}

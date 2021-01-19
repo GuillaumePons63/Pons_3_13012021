@@ -34,16 +34,23 @@ body {
 p {
   margin: 0;
   font-size: 1.2em;
+  font-family: robotoregular;
 }
 
 a {
   text-decoration: none;
 }
 
-h1 {
+h1, h2 {
   font-family: robotoregular;
   margin: 0;
   padding: 20px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-family: robotoregular;
 }
 
 header {
@@ -150,6 +157,55 @@ aside .info__3::before {
   position: absolute;
   color: #9356dc;
   left: 30px;
+}
+
+nav {
+  background-color: #f6f6f6;
+  padding: 60px 0px;
+}
+nav .vignette {
+  display: block;
+  margin: 5px 20px;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  box-shadow: 0 5px 5px #d9d9d9;
+}
+nav .vignette a {
+  color: black;
+}
+nav .vignette p {
+  padding-bottom: 20px;
+}
+nav .vignette__description {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+nav .vignette__image {
+  width: 100%;
+  height: 175px;
+  border-radius: 15px 15px 0 0;
+}
+nav .vignette__image--image1 {
+  background: url("./images/restaurant/la_palette_du_gout.jpg") no-repeat;
+  background-position: bottom;
+  background-size: 100% 230px;
+}
+nav .vignette__image--image2 {
+  background: url("./images/restaurant/la_note_enchantee.jpg") no-repeat;
+  background-position: 0px -150px;
+  background-size: 100% 420px;
+}
+nav .vignette__image--image3 {
+  background: url("./images/restaurant/a_la_francaise.jpg") no-repeat;
+  background-position: bottom;
+  background-size: 100% 230px;
+}
+nav .vignette__image--image4 {
+  background: url("./images/restaurant/le_delice_des_sens.jpg") no-repeat;
+  background-position: bottom;
+  background-size: 100% 230px;
 }
 
 /*# sourceMappingURL=style.css.map */
