@@ -1,0 +1,11 @@
+.bouton {
+    font-family:$font-bold;
+    background : linear-gradient(170deg, $color-secondary,$color-primary);
+    text-align:center;
+    padding:15px;
+    color:white;
+    border-radius:25px;
+    width:190px;
+    margin:20px auto 20px auto;
+    display:block;
+}

@@ -59,6 +59,18 @@ h4 {
   font-weight: 100;
 }
 
+.bouton {
+  font-family: robotobold;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  text-align: center;
+  padding: 15px;
+  color: white;
+  border-radius: 25px;
+  width: 190px;
+  margin: 20px auto 20px auto;
+  display: block;
+}
+
 header {
   width: 100%;
   box-shadow: 0 5px 5px black;
@@ -141,17 +153,6 @@ footer .foot__foot2::before {
 .main__title {
   text-align: center;
   padding: 20px;
-}
-.main__bouton {
-  font-family: robotobold;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-  text-align: center;
-  padding: 15px;
-  color: white;
-  border-radius: 25px;
-  width: 190px;
-  margin: 20px auto 20px auto;
-  display: block;
 }
 
 aside {
