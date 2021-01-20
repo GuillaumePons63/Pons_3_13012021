@@ -17,6 +17,49 @@ header {
     }
 }
 
+
+.menu {
+    background-color : $color-background;
+    padding-bottom:20px;
+    h1 {
+        font-family : $font-secondary;
+    }
+    form {
+        h2 {
+            font-family:$font-primary;
+        }
+        input[type=radio]{
+            height:0;
+            width:0;
+            visibility: hidden;
+            position: absolute;
+        }
+        label {
+            cursor:pointer;
+        }
+        .option{
+            position:relative;
+            background-color:white;
+            margin : 10px;
+            padding:10px;
+            border-radius:15px;
+            @include shadow (grey);            
+            &__titre {
+                font-family:$font-bold;
+            }
+            &__soustitre {
+                font-family:font-primary;
+            }
+            &__prix {
+                font-family:$font-bold;
+                position:absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+        }
+    }
+}
+
 footer {
     background-color: #353535;
     font-family : $font-primary;
