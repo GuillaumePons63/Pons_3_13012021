@@ -67,12 +67,14 @@ input {
   font-family: robotobold;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   text-align: center;
+  font-size: 1em;
   padding: 15px;
   color: white;
   border-radius: 25px;
   width: 190px;
   margin: 20px auto 20px auto;
   display: block;
+  cursor: pointer;
 }
 
 .menuimage {
@@ -80,25 +82,30 @@ input {
   height: 220px;
   position: relative;
 }
+@media only screen and (min-width: 801px) {
+  .menuimage {
+    height: 260px;
+  }
+}
 .menuimage--alafrancaise {
   background: url("./images/restaurant/a_la_francaise.jpg") no-repeat;
-  background-position: bottom;
-  background-size: 100% 230px;
+  background-position: center;
+  background-size: cover;
 }
 .menuimage--palette {
   background: url("./images/restaurant/la_palette_du_gout.jpg") no-repeat;
-  background-position: bottom;
-  background-size: 100% 230px;
+  background-position: center;
+  background-size: cover;
 }
 .menuimage--note {
   background: url("./images/restaurant/la_note_enchantee.jpg") no-repeat;
-  background-position: 0px -150px;
-  background-size: 100% 420px;
+  background-position: center;
+  background-size: cover;
 }
 .menuimage--delice {
   background: url("./images/restaurant/le_delice_des_sens.jpg") no-repeat;
-  background-position: bottom;
-  background-size: 100% 230px;
+  background-position: center;
+  background-size: cover;
 }
 
 .underline {
@@ -107,6 +114,14 @@ input {
   background-color: #99e2d0;
   margin-left: 20px;
   margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 801px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 header {
@@ -140,12 +155,20 @@ header a::before {
   position: relative;
   margin-top: -25px;
 }
+@media only screen and (min-width: 801px) {
+  .menu .flex {
+    justify-content: space-around;
+  }
+}
 .menu h1 {
   font-family: shrikhandregular;
+  font-size: 1.5em;
+  padding-top: 25px;
 }
 .menu form h2 {
   font-family: robotolight;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  font-size: 1em;
 }
 .menu form input[type=radio] {
   height: 0;
@@ -163,6 +186,11 @@ header a::before {
   padding: 10px;
   border-radius: 15px;
   box-shadow: 0 5px 5px #d9d9d9;
+}
+@media only screen and (min-width: 801px) {
+  .menu form .option {
+    min-width: 330px;
+  }
 }
 .menu form .option__titre {
   font-family: robotobold;
@@ -182,6 +210,12 @@ footer {
   font-family: robotolight;
   color: white;
   padding: 30px;
+}
+@media only screen and (min-width: 801px) {
+  footer {
+    padding-left: 8%;
+    font-size: 1.2em;
+  }
 }
 footer a {
   color: white;
@@ -223,6 +257,8 @@ footer .foot__foot2::before {
   color: #4b4b4b;
   background-color: #eaeaea;
   padding: 7px;
+  width: 100%;
+  text-align: center;
 }
 .main__localize::before {
   font-family: "Font Awesome 5 Free";
@@ -236,9 +272,25 @@ footer .foot__foot2::before {
   text-align: center;
   padding: 20px;
 }
+@media only screen and (min-width: 801px) {
+  .main__title {
+    padding: 60px;
+  }
+}
 
 aside {
+  margin: auto;
   padding: 40px 0 60px 0;
+}
+@media only screen and (min-width: 801px) {
+  aside {
+    padding: 40px 0 60px 5%;
+  }
+}
+@media screen and (min-width: 1281px) {
+  aside .flex {
+    justify-content: space-around;
+  }
 }
 aside p {
   font-family: robotobold;
@@ -247,7 +299,7 @@ aside .info {
   background-color: #f6f6f6;
   text-align: center;
   text-align: left;
-  padding: 20px 80px;
+  padding: 20px 20px 20px 60px;
   margin: 10px 30px 10px 30px;
   border-radius: 20px;
   font-size: 0.8em;
@@ -271,6 +323,7 @@ aside .info__1::before {
   position: absolute;
   color: #7e7e7e;
   left: 34px;
+  top: 23px;
 }
 aside .info__2::before {
   font-family: "Font Awesome 5 Free";
@@ -279,6 +332,7 @@ aside .info__2::before {
   position: absolute;
   color: #7e7e7e;
   left: 30px;
+  top: 23px;
 }
 aside .info__3::before {
   font-family: "Font Awesome 5 Free";
@@ -287,11 +341,17 @@ aside .info__3::before {
   position: absolute;
   color: #9356dc;
   left: 30px;
+  top: 23px;
 }
 
 nav {
   background-color: #f6f6f6;
   padding: 40px 0 60px 0;
+}
+@media only screen and (min-width: 801px) {
+  nav {
+    padding: 40px 0 60px 5%;
+  }
 }
 nav .vignette {
   display: block;
@@ -301,6 +361,16 @@ nav .vignette {
   background-color: white;
   box-shadow: 0 5px 5px #d9d9d9;
   position: relative;
+}
+@media only screen and (min-width: 801px) {
+  nav .vignette {
+    width: 42%;
+  }
+}
+@media screen and (min-width: 1281px) {
+  nav .vignette {
+    width: 20%;
+  }
 }
 nav .vignette a {
   color: black;
@@ -321,23 +391,23 @@ nav .vignette__image {
 }
 nav .vignette__image--image1 {
   background: url("./images/restaurant/la_palette_du_gout.jpg") no-repeat;
-  background-position: bottom;
-  background-size: 100% 230px;
+  background-position: center;
+  background-size: cover;
 }
 nav .vignette__image--image2 {
   background: url("./images/restaurant/la_note_enchantee.jpg") no-repeat;
   background-position: 0px -150px;
-  background-size: 100% 420px;
+  background-size: cover;
 }
 nav .vignette__image--image3 {
   background: url("./images/restaurant/a_la_francaise.jpg") no-repeat;
   background-position: bottom;
-  background-size: 100% 230px;
+  background-size: cover;
 }
 nav .vignette__image--image4 {
   background: url("./images/restaurant/le_delice_des_sens.jpg") no-repeat;
   background-position: bottom;
-  background-size: 100% 230px;
+  background-size: cover;
 }
 nav .vignette__image--new {
   width: 80px;

@@ -18,16 +18,36 @@
     width:50%;
 }
 
-@mixin background-image ($image,$position,$width,$height) {
+@mixin background-image ($image,$position) {
     background: url($image) no-repeat ;
     background-position: ($position);
-    background-size: ($width) ($height);
+    background-size: cover;
 }
 
 @mixin padding-block {
     padding : 40px 0 60px 0;
+    @include tablette {
+        padding : 40px 0 60px 5%;
+    }
 }
 
 @mixin shadow ($color) {
     box-shadow: 0 5px 5px ($color);
+}
+
+@mixin flexrow {
+    display:flex;
+    flex-direction: row;
+}
+
+@mixin tablette {
+    @media only screen and (min-width: map-get($breakpoints, tablette)){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
 }

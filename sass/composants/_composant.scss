@@ -2,29 +2,34 @@
     font-family:$font-bold;
     background : linear-gradient(170deg, $color-secondary,$color-primary);
     text-align:center;
+    font-size:1em;
     padding:15px;
     color:white;
     border-radius:25px;
     width:190px;
     margin:20px auto 20px auto;
     display:block;
+    cursor:pointer;
 }
 
 .menuimage {
     width:100%;
     height:220px;
     position:relative;
+    @include tablette {
+        height:260px;
+    }
         &--alafrancaise {
-            @include background-image ('./images/restaurant/a_la_francaise.jpg',bottom,100%,230px);
+            @include background-image ('./images/restaurant/a_la_francaise.jpg',center);
         }
         &--palette {
-            @include background-image ('./images/restaurant/la_palette_du_gout.jpg',bottom,100%,230px);    
+            @include background-image ('./images/restaurant/la_palette_du_gout.jpg',center);
         }
         &--note{
-            @include background-image ('./images/restaurant/la_note_enchantee.jpg',0px -150px,100%,420px);
+            @include background-image ('./images/restaurant/la_note_enchantee.jpg',center);
         }
         &--delice {
-            @include background-image ('./images/restaurant/le_delice_des_sens.jpg',bottom,100%,230px);
+            @include background-image ('./images/restaurant/le_delice_des_sens.jpg',center);
         }
     }
 
@@ -36,5 +41,10 @@
     margin-bottom:20px
 }
 
+.flex {@include tablette {
+    @include flexrow;
+    flex-wrap: wrap;
+    }
+}    
 
 

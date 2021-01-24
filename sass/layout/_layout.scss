@@ -24,13 +24,21 @@ header {
     border-radius:25px 25px 0 0;
     position:relative;
     margin-top:-25px;
+    .flex {
+        @include tablette {
+        justify-content:space-around;
+        }
+    }
     h1 {
         font-family : $font-secondary;
+        font-size:1.5em;
+        padding-top:25px;
     }
     form {
         h2 {
             font-family:$font-primary;
-            padding-bottom:10px;
+            padding-bottom:5px;
+            font-size:1em;
         }
         input[type=radio]{
             height:0;
@@ -47,6 +55,9 @@ header {
             margin : 10px;
             padding:10px;
             border-radius:15px;
+            @include tablette {
+                min-width:330px;
+            }
             @include shadow (#d9d9d9);
             &__titre {
                 font-family:$font-bold;
@@ -69,6 +80,10 @@ footer {
     font-family : $font-primary;
     color:white;
     padding:30px;
+    @include tablette {
+        padding-left:8%;
+        font-size:1.2em;
+    }
     a {
         color:white;
     }

@@ -5,6 +5,8 @@
         color: #4b4b4b;
         background-color: #eaeaea;
         padding:7px;
+        width:100%;
+        text-align: center;
         &::before {
             @include font-icone-before ('\f3c5',-5px,black,relative) ;
 
@@ -13,18 +15,27 @@
     &__title {
         text-align:center;
         padding : 20px;
+        @include tablette {
+            padding: 60px;
+        }
     }
 }
 
 aside {
+    margin: auto;
     @include padding-block;
+    .flex {
+        @include desktop {
+            justify-content : space-around;
+        }
+    }
     p {
         font-family:$font-bold;
     }    
     .info {
         @include background-grey;
         text-align:left;
-        padding:20px 80px;
+        padding:20px 20px 20px 60px;
         margin: 10px 30px 10px 30px;
         border-radius: 20px;
         font-size: 0.8em;
@@ -43,12 +54,15 @@ aside {
             }
         &__1::before {
             @include font-icone-before ('\f3cd',34px,#7e7e7e,absolute);
+            top:23px;
         }
         &__2::before {
             @include font-icone-before ('\f03a',30px,#7e7e7e,absolute);
+            top:23px;
         }
         &__3::before {
             @include font-icone-before ('\f54e',30px,#9356dc,absolute);
+            top:23px;
         }
     }
 }
@@ -64,6 +78,12 @@ nav {
         background-color:white;
         @include shadow (#d9d9d9);
         position:relative;
+        @include tablette {
+            width:42%;
+        }
+        @include desktop {
+            width:20%;
+        }
         a {
             color:black;    
         }
@@ -81,16 +101,16 @@ nav {
             border-radius:15px 15px 0 0;
             position:relative;
             &--image1 {
-                @include background-image ('./images/restaurant/la_palette_du_gout.jpg',bottom,100%,230px);    
+                @include background-image ('./images/restaurant/la_palette_du_gout.jpg',center);    
             }
             &--image2{
-                @include background-image ('./images/restaurant/la_note_enchantee.jpg',0px -150px,100%,420px);
+                @include background-image ('./images/restaurant/la_note_enchantee.jpg',0px -150px);
             }
             &--image3 {
-                @include background-image ('./images/restaurant/a_la_francaise.jpg',bottom,100%,230px);    
+                @include background-image ('./images/restaurant/a_la_francaise.jpg',bottom);    
             }    
             &--image4 {
-                @include background-image ('./images/restaurant/le_delice_des_sens.jpg',bottom,100%,230px);
+                @include background-image ('./images/restaurant/le_delice_des_sens.jpg',bottom);
             }
             &--new {
                 width : 80px;
