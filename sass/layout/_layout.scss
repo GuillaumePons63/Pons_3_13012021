@@ -55,6 +55,12 @@ header {
             margin : 10px;
             padding:10px;
             border-radius:15px;
+            animation: apparition 300ms ease-out backwards;
+            @for $i from 1 through 4 {
+                &--#{$i} {
+                    animation-delay: 200ms * $i;
+                }
+            }           
             @include tablette {
                 min-width:330px;
             }

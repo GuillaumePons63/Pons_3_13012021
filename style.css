@@ -124,6 +124,16 @@ input {
   }
 }
 
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 header {
   width: 100%;
   box-shadow: 0 5px 5px black;
@@ -185,7 +195,20 @@ header a::before {
   margin: 10px;
   padding: 10px;
   border-radius: 15px;
+  animation: apparition 300ms ease-out backwards;
   box-shadow: 0 5px 5px #d9d9d9;
+}
+.menu form .option--1 {
+  animation-delay: 200ms;
+}
+.menu form .option--2 {
+  animation-delay: 400ms;
+}
+.menu form .option--3 {
+  animation-delay: 600ms;
+}
+.menu form .option--4 {
+  animation-delay: 800ms;
 }
 @media only screen and (min-width: 801px) {
   .menu form .option {
