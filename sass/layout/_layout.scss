@@ -48,7 +48,9 @@ header {
         }
         label {
             cursor:pointer;
+            position:relative;
         }
+        
         .option{
             position:relative;
             background-color:white;
@@ -56,31 +58,77 @@ header {
             padding:10px;
             border-radius:15px;
             animation: apparition 300ms ease-out backwards;
+            transition:width 300ms ease-in-out;
+            .texte {
+                position : relative;
+                width:100%;
+                transition: width 300ms ease-in-out;
+            }
+            .check {
+                display:inline-block;
+                background-color:#8edec9;
+                @include shadow (#d9d9d9);
+                box-sizing:border-box;
+                color:white;
+                position:absolute;
+                height:64px;
+                right:0px;
+                border-radius:0 14px 15px 0;
+                top:0;
+                overflow:hidden;
+                transform: scaleX(0);
+                transform-origin: right;
+                transition:transform 300ms ease-in-out;
+                animation: index 300ms both;
+            }
+            .check::after {
+                content:'\f058';
+                display:block;
+                font-family:$font-icone;
+                font-size:2em;
+                padding: 15px 15px;
+            }
+            &:hover > .texte {
+                width:80%;
+            }  
+            &:hover > .check {
+                transform-origin: right;
+                transform: scaleX(1);
+                z-index:1;
+            }
+            &:hover > .check::after {
+                transform-origin: center;
+                animation: tourne 500ms ease;
+            }
             @for $i from 1 through 4 {
                 &--#{$i} {
                     animation-delay: 200ms * $i;
                 }
-            }           
-            @include tablette {
-                min-width:330px;
             }
             @include shadow (#d9d9d9);
             &__titre {
                 font-family:$font-bold;
+                white-space:nowrap;
+                overflow:hidden;
+                text-overflow: ellipsis;
             }
             &__soustitre {
                 font-family:$font-primary;
+                white-space:nowrap;
+                overflow:hidden;
+                text-overflow: ellipsis;
+                margin-right: 40px;
             }
             &__prix {
                 font-family:$font-bold;
                 position:absolute;
-                right: 10px;
-                bottom: 10px;
+                right: 5px;
+                bottom: 0px;
+                display:block;
             }
         }
     }
 }
-
 footer {
     background-color: #353535;
     font-family : $font-primary;
