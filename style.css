@@ -76,6 +76,11 @@ input {
   display: block;
   cursor: pointer;
   box-shadow: 0 2px 2px grey;
+  transition: all 300ms ease;
+}
+.bouton:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 4px grey;
 }
 
 .menuimage {
