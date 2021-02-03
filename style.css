@@ -555,7 +555,7 @@ nav .vignette__image--new {
 .loader {
   position: fixed;
   width: 100%;
-  height: 150px;
+  height: 200px;
   background: url(./images/logo/ohmyfood.svg) center no-repeat;
   background-size: 60%;
   animation: sortie 3s forwards ease;
