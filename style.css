@@ -182,7 +182,7 @@ input {
   -webkit-background-clip: text;
   -webkit-text-fill-color: white;
   position: absolute;
-  top: 23px;
+  top: 20px;
   right: 10%;
 }
 .hearth:hover::after {
@@ -509,7 +509,7 @@ nav .vignette__description {
   position: relative;
   padding-left: 15px;
   margin-bottom: 15px;
-  width: 85%;
+  width: 95%;
 }
 nav .vignette__image {
   width: 100%;
