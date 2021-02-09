@@ -545,6 +545,11 @@ nav .vignette__image--new {
   margin-top: 2%;
   font-size: 0.8em;
 }
+@media screen and (min-width: 1281px) {
+  nav .vignette__image--new {
+    margin-left: 65%;
+  }
+}
 
 /* animation */
 .load {
