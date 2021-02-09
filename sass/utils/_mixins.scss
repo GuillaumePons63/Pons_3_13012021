@@ -1,6 +1,5 @@
 @mixin font-icone-before ($content,$left,$color,$position) {
     font-family: $font-icone;
-    font-size:1 em;
     content: ($content);
     position : ($position);
     color:($color);
