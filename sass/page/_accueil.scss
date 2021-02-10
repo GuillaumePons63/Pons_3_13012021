@@ -25,7 +25,7 @@ aside {
     margin: auto;
     @include padding-block;
     .flex {
-        @include desktop {
+        @include tablette {
             justify-content : space-around;
         }
     }
@@ -79,7 +79,7 @@ nav {
         @include shadow (#d9d9d9);
         position:relative;
         @include tablette {
-            width:42%;
+            width:42%;            
         }
         @include desktop {
             width:20%;

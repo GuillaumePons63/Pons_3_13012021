@@ -47,9 +47,11 @@
     margin-bottom:20px
 }
 
-.flex {@include tablette {
-    @include flexrow;
-    flex-wrap: wrap;
+.flex {
+    @include tablette {
+        @include flexrow;
+        flex-wrap: wrap;
+        justify-content:space-between;
     }
 }
 .flex__around {
@@ -62,6 +64,38 @@
     display:flex;
     justify-content: space-between;
     flex-direction: row;
+}
+
+.hearth {
+    &::after{
+    font-family: $font-icone;
+    content:'\f004';
+    font-size:1.5em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    background-color:white;
+    background-image: linear-gradient(170deg,$color-secondary,$color-primary);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color:white;
+    position: absolute;
+    top: 20px;
+    right:10%;    
+    }
+    &:hover::after{
+        -webkit-text-stroke-width: 0px;
+        -webkit-text-fill-color:transparent;
+        animation:opacity 600ms ease both;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity : 0
+    }
+    100% {
+        opacity : 1
+    }
 }
 
 @keyframes apparition {
@@ -96,37 +130,6 @@
     100% {
         transform:rotate(1turn);
         
-    }
-}
-
-.hearth {
-    &::after{
-    font-family: $font-icone;
-    content:'\f004';
-    font-size:1.5em;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    background-color:white;
-    background-image: linear-gradient(170deg,$color-secondary,$color-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:white;
-    position: absolute;
-    top: 20px;
-    right:10%;    
-    }
-    &:hover::after{
-        -webkit-text-stroke-width: 0px;
-        -webkit-text-fill-color:transparent;
-        animation:opacity 600ms ease both;
-    }
-}
-
-@keyframes opacity {
-    0% {
-        opacity : 0
-    }
-    100% {
-        opacity : 1
     }
 }
 

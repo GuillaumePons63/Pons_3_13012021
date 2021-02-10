@@ -127,6 +127,7 @@ input {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -142,6 +143,35 @@ input {
   flex-direction: row;
 }
 
+.hearth::after {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-size: 1.5em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background-color: white;
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: white;
+  position: absolute;
+  top: 20px;
+  right: 10%;
+}
+.hearth:hover::after {
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-fill-color: transparent;
+  animation: opacity 600ms ease both;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes apparition {
   0% {
     opacity: 0;
@@ -169,34 +199,6 @@ input {
   }
   100% {
     transform: rotate(1turn);
-  }
-}
-.hearth::after {
-  font-family: "Font Awesome 5 Free";
-  content: "";
-  font-size: 1.5em;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  background-color: white;
-  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: white;
-  position: absolute;
-  top: 20px;
-  right: 10%;
-}
-.hearth:hover::after {
-  -webkit-text-stroke-width: 0px;
-  -webkit-text-fill-color: transparent;
-  animation: opacity 600ms ease both;
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 header {
@@ -263,6 +265,11 @@ header a::before {
   animation: apparition 300ms ease-out backwards;
   transition: width 300ms ease-in-out;
   box-shadow: 0 5px 5px #d9d9d9;
+}
+@media only screen and (min-width: 801px) {
+  .menu form .option {
+    width: 90%;
+  }
 }
 .menu form .option .texte {
   position: relative;
@@ -417,7 +424,7 @@ aside {
     padding: 40px 0 60px 5%;
   }
 }
-@media screen and (min-width: 1281px) {
+@media only screen and (min-width: 801px) {
   aside .flex {
     justify-content: space-around;
   }
