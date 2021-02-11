@@ -137,7 +137,7 @@ nav {
 /* animation */
 .load {
     animation: apparition 300ms both;
-    animation-delay: 3s;
+    animation-delay: 2700ms;
 }
 
 
@@ -148,7 +148,7 @@ nav {
     height:200px;
     background: url(./images/logo/ohmyfood.svg) center no-repeat;
     background-size: 60%;
-    animation:sortie 3s forwards ease ;
+    animation:sortie 2750ms forwards ease ;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -162,7 +162,7 @@ nav {
         animation: pulse 1s cubic-bezier(.5,.5,0,1);
         @for $i from 1 through 3 {
             &--#{$i} {
-                animation-delay: 600ms * $i;
+                animation-delay: 500ms * $i;
             }
         }
         &--1 {
@@ -199,7 +199,7 @@ nav {
     20% {
         transform: translateY(50%);
     }
-    75% {
+    80% {
         transform: translateY(50%);
     }
     100% {
